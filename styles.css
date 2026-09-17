@@ -4,12 +4,12 @@
   --surface: #010103;
   --surface-soft: rgba(6, 6, 12, 0.94);
   --panel: rgba(255, 255, 255, 0.03);
-  --line: rgba(255, 255, 255, 0.08);
+  --line: rgba(255, 255, 255, 0.055);
   --text: #f5f3fb;
   --muted: #b7b1d3;
   --accent: #a45cff;
   --accent-strong: #7d35f8;
-  --shadow: 0 26px 60px rgba(30, 10, 85, 0.34);
+  --shadow: 0 14px 38px rgba(30, 10, 85, 0.18);
   --radius-xl: 28px;
   --radius-lg: 22px;
   --radius-md: 18px;
@@ -58,6 +58,7 @@ a {
   filter: blur(100px);
   pointer-events: none;
   opacity: 0.6;
+  animation: glow-drift 12s ease-in-out infinite alternate;
 }
 
 .page-glow-left {
@@ -70,6 +71,7 @@ a {
   right: -100px;
   top: 40px;
   background: rgba(164, 92, 255, 0.3);
+  animation-delay: -6s;
 }
 
 .site-shell {
@@ -80,8 +82,9 @@ a {
 .showcase,
 .info-card,
 .projects,
+.research-panel,
 .contact-panel {
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.055);
   box-shadow: var(--shadow);
 }
 
@@ -543,6 +546,7 @@ h2 span {
 .info-card,
 .services,
 .projects,
+.research-panel,
 .contact-panel {
   padding: 26px;
   border-radius: var(--radius-lg);
@@ -571,8 +575,28 @@ h2 span {
 }
 
 .projects,
+.research-panel,
 .contact-panel {
   margin-top: 18px;
+}
+
+.research-panel {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(164, 92, 255, 0.18), transparent 56%),
+    var(--surface-soft);
+}
+
+.research-copy {
+  max-width: 48ch;
+  margin: 2px 0 8px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.research-link {
+  gap: 10px;
 }
 
 .projects {
@@ -853,6 +877,11 @@ h2 span {
   transform: translateY(0);
 }
 
+@keyframes glow-drift {
+  from { transform: translate3d(0, 0, 0) scale(1); }
+  to { transform: translate3d(42px, -24px, 0) scale(1.12); }
+}
+
 @media (max-width: 1080px) {
   .hero-layout,
   .info-grid,
@@ -957,6 +986,7 @@ h2 span {
   .info-card,
   .services,
   .projects,
+  .research-panel,
   .contact-panel {
     padding-left: 8px;
     padding-right: 8px;
@@ -1022,6 +1052,7 @@ h2 span {
     position: static;
     margin-bottom: 16px;
   }
+
 }
 
 @media (prefers-reduced-motion: reduce) {
