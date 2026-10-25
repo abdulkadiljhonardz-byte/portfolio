@@ -1,322 +1,427 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jhonardz Mo-o Abdulkadil | Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#061217" />
     <meta
       name="description"
-      content="A premium portfolio landing page for Jhonardz Mo-o Abdulkadil."
+      content="Portfolio of Jhonardz Mo-o Abdulkadil, a web, Flutter, AI automation, and embedded systems developer building reliable digital products from interface to infrastructure."
+    />
+    <meta property="og:title" content="Jhonardz Abdulkadil — Developer Portfolio" />
+    <meta
+      property="og:description"
+      content="Web platforms, Flutter applications, AI automation, and connected systems—designed and built end to end."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="me.png" />
+    <title>Jhonardz Abdulkadil — Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Manrope:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-glow page-glow-left"></div>
-    <div class="page-glow page-glow-right"></div>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
 
-    <div class="site-shell">
-      <section class="showcase reveal" id="hero">
-        <header class="topbar">
-          <a class="brand" href="#hero">Jhonardz</a>
+    <header class="site-header" id="top">
+      <div class="nav-shell">
+        <a class="brand" href="#top" aria-label="Jhonardz Abdulkadil, home">
+          <span class="brand-mark" aria-hidden="true">JA</span>
+          <span class="brand-copy"><strong>Jhonardz Abdulkadil</strong><small>Developer Portfolio</small></span>
+        </a>
 
-          <button
-            class="menu-toggle"
-            type="button"
-            aria-expanded="false"
-            aria-controls="site-nav"
-            aria-label="Toggle navigation"
-          >
-            <span></span>
-            <span></span>
-          </button>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open navigation"
+        >
+          <span></span><span></span>
+        </button>
 
-          <nav class="nav" id="site-nav">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#research">Research</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-          </nav>
-        </header>
+        <nav class="nav-links" id="site-nav" aria-label="Primary navigation">
+          <a href="#work">Work</a>
+          <a href="#expertise">Expertise</a>
+          <a href="#approach">Approach</a>
+          <a class="nav-cta" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
 
-        <div class="hero-layout">
-          <aside class="hero-side hero-side-left">
-            <div class="intro-copy">
-              <p class="eyebrow">Hello, I'm</p>
-              <h1>Jhonardz Mo-o Abdulkadil</h1>
-            </div>
-
-            <div class="social-rail">
-              <a
-                href="https://www.facebook.com/johnardz.abdulkadil/"
-                aria-label="Facebook"
-              >
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path
-                    d="M14 8h2V5h-2c-2.2 0-4 1.8-4 4v2H8v3h2v5h3v-5h2.5l.5-3H13V9c0-.6.4-1 1-1Z"
-                  />
-                </svg>
-              </a>
-              <a
-                href="mailto:abdulkadiljhonardz@gmail.com"
-                aria-label="Email"
-              >
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path
-                    d="M4 6h16c1.1 0 2 .9 2 2v8c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V8c0-1.1.9-2 2-2Zm0 2v.4l8 5.2 8-5.2V8H4Zm16 8V11l-7.5 4.9a1 1 0 0 1-1 0L4 11v5h16Z"
-                  />
-                </svg>
-              </a>
-              <a
-                href="https://github.com/abdulkadiljhonardz-byte"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="GitHub"
-              >
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M12 2C6.48 2 2 6.58 2 12.23c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.2-3.37-1.2-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1.01.07 1.54 1.06 1.54 1.06.9 1.57 2.36 1.12 2.94.86.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.15-4.56-5.1 0-1.13.39-2.05 1.04-2.78-.1-.26-.45-1.31.1-2.73 0 0 .85-.28 2.75 1.06A9.3 9.3 0 0 1 12 6.5c.85 0 1.71.12 2.51.35 1.9-1.34 2.74-1.06 2.74-1.06.55 1.42.2 2.47.1 2.73.65.73 1.04 1.65 1.04 2.78 0 3.96-2.35 4.83-4.58 5.09.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.25 10.25 0 0 0 22 12.23C22 6.58 17.52 2 12 2Z" />
-                </svg>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/jhonardz-abdulkadil"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="LinkedIn"
-              >
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M6.5 8.5A1.75 1.75 0 1 0 6.5 5a1.75 1.75 0 0 0 0 3.5ZM5 9.8h3V19H5V9.8Zm4.9 0h2.87v1.25h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.6V19h-3v-4.35c0-1.04-.02-2.37-1.45-2.37-1.45 0-1.67 1.13-1.67 2.3V19h-3V9.8Z" />
-                </svg>
-              </a>
-            </div>
-          </aside>
-
-          <div class="portrait-stage" aria-hidden="true">
-            <div class="portrait-aura"></div>
-            <div class="portrait-core">
-              <img
-                class="portrait-image"
-                src="me.png"
-                alt="Portrait of Jhonardz Mo-o Abdulkadil"
-              />
-            </div>
+    <main id="main-content">
+      <section class="hero section-shell reveal" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="hero-meta">
+            <p class="eyebrow"><span></span> Web • Mobile • AI Automation • Connected Systems</p>
+            <p>Portfolio / 2026</p>
           </div>
+          <h1 id="hero-title">I turn complex ideas into <em>reliable products.</em></h1>
+          <p class="hero-lede">
+            I'm Jhonardz—a developer who builds responsive web platforms,
+            cross-platform Flutter apps, AI-powered workflows, and IoT systems from interface to infrastructure.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↓</span></a>
+            <a class="button button-secondary" href="mailto:abdulkadiljhonardz@gmail.com">Email me <span aria-hidden="true">↗</span></a>
+          </div>
+          <ul class="hero-proof" aria-label="Core strengths">
+            <li>
+              <span>01</span>
+              <strong>End-to-end delivery</strong>
+            </li>
+            <li>
+              <span>02</span>
+              <strong>Cross-platform thinking</strong>
+            </li>
+            <li>
+              <span>03</span>
+              <strong>Hardware + software</strong>
+            </li>
+          </ul>
+        </div>
 
-          <aside class="hero-side hero-side-right">
-            <div class="role-copy">
-              <p class="eyebrow">Creative</p>
-              <h2>
-                Web Developer
-                <span>& Flutter Dev</span>
-              </h2>
-              <p class="hero-text">
-                Flutter, Web, Arduino, ESP32, Raspberry Pi
-              </p>
-            </div>
-
-            <a class="resume-link" href="#contact">Contact</a>
-          </aside>
+        <div class="hero-visual">
+          <div class="hero-orbit" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="portrait-frame">
+            <div class="portrait-grid" aria-hidden="true"></div>
+            <img src="me.png" alt="Jhonardz Mo-o Abdulkadil" />
+            <span class="portrait-label">Web • Mobile • AI • Embedded</span>
+          </div>
+          <div class="code-card" aria-label="Development philosophy">
+            <div class="code-card-top"><span></span><span></span><span></span><small>build.js</small></div>
+            <code><span>const</span> product = {<br />&nbsp;&nbsp;useful: <b>true</b>,<br />&nbsp;&nbsp;maintainable: <b>true</b>,<br />&nbsp;&nbsp;builtToLast: <b>true</b><br />};</code>
+          </div>
         </div>
       </section>
 
-      <main class="content-stack">
-        <section class="info-grid info-grid-single reveal" id="about">
-          <article class="info-card info-card-large info-card-wide">
-            <div class="about-summary">
-              <p class="section-kicker">About</p>
-              <h3>Web, Flutter, and embedded systems developer.</h3>
-              <p>Frontend, backend, mobile, and IoT builds.</p>
+      <section class="marquee" aria-label="Technology highlights">
+        <div class="marquee-track">
+          <div class="marquee-group">
+            <span>Flutter</span><i>✦</i><span>Laravel</span><i>✦</i><span>AI Automation</span><i>✦</i><span>JavaScript</span><i>✦</i><span>Firebase</span><i>✦</i><span>Python</span><i>✦</i><span>PostgreSQL</span><i>✦</i><span>ESP32</span><i>✦</i><span>Raspberry Pi</span><i>✦</i>
+          </div>
+          <div class="marquee-group" aria-hidden="true">
+            <span>Flutter</span><i>✦</i><span>Laravel</span><i>✦</i><span>AI Automation</span><i>✦</i><span>JavaScript</span><i>✦</i><span>Firebase</span><i>✦</i><span>Python</span><i>✦</i><span>PostgreSQL</span><i>✦</i><span>ESP32</span><i>✦</i><span>Raspberry Pi</span><i>✦</i>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell section-block reveal" id="work" aria-labelledby="work-title">
+        <div class="section-intro">
+          <div>
+            <p class="eyebrow"><span></span> 01 / Selected work</p>
+            <h2 id="work-title">Live products built for real needs.</h2>
+          </div>
+          <div class="section-note">
+            <span class="section-count"><i aria-hidden="true"></i> 06 live projects</span>
+            <p>Digital platforms for education, public service, productivity, compliance, and creative work—available to explore online.</p>
+          </div>
+        </div>
+
+        <div class="work-grid">
+          <article class="work-card live-project-card project-visual-card course-project-card" data-project="course-guide">
+            <div class="work-number">01 / Education</div>
+            <div class="work-card-body project-card-layout">
+              <div class="project-card-copy">
+                <div class="work-icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48"><path d="m5 18 19-9 19 9-19 9-19-9Z"/><path d="M12 22v10c7 6 17 6 24 0V22M43 18v13"/></svg>
+                </div>
+                <div>
+                  <h3>MSU-Sulu Course Guide</h3>
+                  <p>A course recommendation experience that helps students explore programs using their grades, interests, strengths, and skills.</p>
+                </div>
+              </div>
+
+              <a class="project-browser course-preview" href="https://ai-course-rec-production.up.railway.app/" target="_blank" rel="noopener noreferrer" aria-label="Open the MSU-Sulu Course Guide">
+                <span class="mini-browser-bar"><i></i><i></i><i></i><b>course guide</b></span>
+                <span class="course-preview-head"><i>MSU</i><b>Course Guide<small>Find a program that fits you</small></b></span>
+                <span class="course-preview-fields"><i>Grades</i><i>Interests</i><i>Strengths</i><i>Skills</i></span>
+                <span class="course-preview-action">Explore recommendations <b>→</b></span>
+              </a>
             </div>
-            <div class="skills-layout" id="skills">
-              <div class="skills-group skills-group-featured">
-                <div class="skills-meta">
-                  <span class="skills-icon">WEB</span>
-                  <div>
-                    <p class="skills-label">Web Development</p>
-                    <p class="skills-description">Responsive, full-stack web experiences</p>
-                  </div>
-                </div>
-                <div class="skill-level"><span>Core stack</span><span>Advanced</span></div>
-                <div class="skill-meter" role="progressbar" aria-label="Web development proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90"><span style="--level: 90%"></span></div>
-                <div class="skills-cloud" aria-label="Web programming stack">
-                  <span>HTML</span>
-                  <span>PHP</span>
-                  <span>CSS</span>
-                  <span>JavaScript</span>
-                  <span>Laravel</span>
-                </div>
-              </div>
-              <div class="skills-group skills-group-featured">
-                <div class="skills-meta">
-                  <span class="skills-icon">APP</span>
-                  <div>
-                    <p class="skills-label">Mobile Development</p>
-                    <p class="skills-description">Cross-platform apps from one codebase</p>
-                  </div>
-                </div>
-                <div class="skill-level"><span>Core stack</span><span>Advanced</span></div>
-                <div class="skill-meter" role="progressbar" aria-label="Mobile development proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85"><span style="--level: 85%"></span></div>
-                <div class="skills-cloud" aria-label="Mobile development stack">
-                  <span>Flutter</span>
-                  <span>Dart</span>
-                </div>
-              </div>
-              <div class="skills-group">
-                <div class="skills-meta">
-                  <span class="skills-icon">BE</span>
-                  <div>
-                    <p class="skills-label">Backend & Cloud</p>
-                    <p class="skills-description">APIs, Django applications, serverless functions, and deployment</p>
-                  </div>
-                </div>
-                <div class="skill-level"><span>Workflow</span><span>Proficient</span></div>
-                <div class="skill-meter" role="progressbar" aria-label="Backend and cloud proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="78"><span style="--level: 78%"></span></div>
-                <div class="skills-cloud" aria-label="Server and backend">
-                  <span>Python</span>
-                  <span>Django</span>
-                  <span>Firebase</span>
-                  <span>Firebase Cloud Functions</span>
-                  <span>Supabase</span>
-                  <span>Vercel</span>
-                </div>
-              </div>
-              <div class="skills-group">
-                <div class="skills-meta">
-                  <span class="skills-icon">DB</span>
-                  <div>
-                    <p class="skills-label">Data & Databases</p>
-                    <p class="skills-description">Structured and real-time application data</p>
-                  </div>
-                </div>
-                <div class="skill-level"><span>Workflow</span><span>Proficient</span></div>
-                <div class="skill-meter" role="progressbar" aria-label="Database proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="78"><span style="--level: 78%"></span></div>
-                <div class="skills-cloud" aria-label="Database technologies">
-                  <span>MySQL</span>
-                  <span>PostgreSQL</span>
-                  <span>SQLite</span>
-                  <span>Firestore</span>
-                </div>
-              </div>
-              <div class="skills-group">
-                <div class="skills-meta">
-                  <span class="skills-icon">I/O</span>
-                  <div>
-                    <p class="skills-label">IoT & Embedded Systems</p>
-                    <p class="skills-description">Connected hardware and device prototyping</p>
-                  </div>
-                </div>
-                <div class="skill-level"><span>Specialty</span><span>Proficient</span></div>
-                <div class="skill-meter" role="progressbar" aria-label="IoT and embedded systems proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75"><span style="--level: 75%"></span></div>
-                <div class="skills-cloud" aria-label="Embedded platforms">
-                  <span>Arduino</span>
-                  <span>ESP32</span>
-                  <span>Raspberry Pi</span>
-                </div>
+            <div class="project-card-footer">
+              <div class="tag-row"><span>Flutter</span><span>Student guidance</span><span>Recommendation system</span></div>
+              <div class="project-actions">
+                <button class="case-study-trigger" type="button" data-project="course-guide">Case study <span aria-hidden="true">→</span></button>
+                <a class="live-project-link" href="https://ai-course-rec-production.up.railway.app/" target="_blank" rel="noopener noreferrer" aria-label="View MSU-Sulu Course Guide live website">Live site <span aria-hidden="true">↗</span></a>
               </div>
             </div>
           </article>
-        </section>
 
-        <section class="research-panel reveal" id="research">
-          <div class="section-heading section-heading-centered">
-            <p class="section-kicker">Research</p>
-            <h3>Explore my academic work.</h3>
-            <p class="research-copy">
-              View my verified research records and publications on ORCID.
-            </p>
-            <a
-              class="button button-solid research-link"
-              href="https://orcid.org/0009-0006-8367-4458"
-              target="_blank"
-              rel="noreferrer"
-            >
-              View my ORCID profile <span aria-hidden="true">↗</span>
-            </a>
+          <article class="work-card live-project-card project-visual-card sdo-project-card" data-project="sdo-sulu">
+            <div class="work-number">02 / Public service</div>
+            <div class="work-card-body project-card-layout">
+              <div class="project-card-copy">
+                <div class="work-icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48"><path d="M5 19h38L24 7 5 19ZM9 21v17M17 21v17M31 21v17M39 21v17M5 41h38"/></svg>
+                </div>
+                <div>
+                  <h3>SDO Sulu Official Portal</h3>
+                  <p>A digital information portal for notices, memoranda, school directories, events, search, and public updates.</p>
+                </div>
+              </div>
+
+              <a class="project-browser sdo-preview" href="https://sdo-sulu-website-production.up.railway.app/" target="_blank" rel="noopener noreferrer" aria-label="Open the SDO Sulu Official Portal">
+                <span class="mini-browser-bar"><i></i><i></i><i></i><b>official portal</b></span>
+                <span class="sdo-preview-brand"><i>SDO</i><b>Schools Division Office<small>Sulu · Department of Education</small></b></span>
+                <span class="sdo-preview-hero"><small>Latest from SDO Sulu</small><b>Official digital information portal</b></span>
+                <span class="sdo-preview-links"><i>Notices</i><i>Memoranda</i><i>Schools</i></span>
+              </a>
+            </div>
+            <div class="project-card-footer">
+              <div class="tag-row"><span>Official portal</span><span>Content publishing</span><span>Search</span></div>
+              <div class="project-actions">
+                <button class="case-study-trigger" type="button" data-project="sdo-sulu">Case study <span aria-hidden="true">→</span></button>
+                <a class="live-project-link" href="https://sdo-sulu-website-production.up.railway.app/" target="_blank" rel="noopener noreferrer" aria-label="View SDO Sulu Official Portal live website">Live site <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card live-project-card mobile-app-card" data-project="quta">
+            <div class="work-number">03 / Productivity</div>
+            <div class="work-card-body mobile-card-layout">
+              <div class="mobile-card-copy">
+                <div class="work-icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48"><rect x="13" y="5" width="22" height="38" rx="5"/><path d="M19 10h10M18 20h12M18 26h7M21 37h6"/></svg>
+                </div>
+                <div>
+                  <h3>Quta <small>Mobile app</small></h3>
+                  <p>A personal productivity app combining tasks, schedules, money tracking, and focus time.</p>
+                </div>
+              </div>
+
+              <a class="quta-phone" href="https://quta-download-site-production.up.railway.app/" target="_blank" rel="noopener noreferrer" aria-label="Open the Quta mobile app download website">
+                <span class="quta-phone-top"><b>9:41</b><i>● ◒ ▰</i></span>
+                <span class="quta-greeting"><small>Good afternoon</small><b>Monday, October 12</b></span>
+                <span class="quta-balance"><small>Available balance</small><strong>₱913.00</strong><i><b>Income<br />₱2,000</b><b>Expenses<br />₱1,087</b></i></span>
+                <span class="quta-actions"><i>＋<b>Transaction</b></i><i>✓<b>New task</b></i></span>
+                <span class="quta-progress"><i>ϟ</i><b>Daily progress<small>Ready for a fresh start</small></b><strong>0%</strong></span>
+                <span class="quta-nav"><b>⌂</b><i>▣</i><i>☷</i><i>▦</i><i>◌</i></span>
+              </a>
+            </div>
+            <div class="project-card-footer">
+              <div class="tag-row"><span>Mobile app</span><span>Android &amp; iOS</span><span>Productivity</span></div>
+              <div class="project-actions">
+                <button class="case-study-trigger" type="button" data-project="quta">Case study <span aria-hidden="true">→</span></button>
+                <a class="live-project-link" href="https://quta-download-site-production.up.railway.app/" target="_blank" rel="noopener noreferrer" aria-label="View Quta live website">Live site <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card live-project-card project-visual-card council-project-card" data-project="sb-jolo">
+            <div class="work-number">04 / Local government</div>
+            <div class="work-card-body project-card-layout">
+              <div class="project-card-copy">
+                <div class="work-icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48"><path d="M7 41h34M10 37h28M13 37V21M21 37V21M29 37V21M37 37V21M7 18h34L24 7 7 18Z"/></svg>
+                </div>
+                <div>
+                  <h3>Sangguniang Bayan ng Jolo</h3>
+                  <p>A public-facing website for the Sangguniang Bayan ng Jolo, providing a dedicated online presence for local government information.</p>
+                </div>
+              </div>
+
+              <a class="project-browser council-preview" href="https://sangguniangbayanngjolo.page.gd/" target="_blank" rel="noopener noreferrer" aria-label="Open the Sangguniang Bayan ng Jolo website">
+                <span class="mini-browser-bar"><i></i><i></i><i></i><b>official website</b></span>
+                <span class="council-preview-brand"><i>SB</i><b>Sangguniang Bayan<small>Municipality of Jolo</small></b></span>
+                <span class="council-preview-stage"><small>Local government website</small><b>Jolo, Sulu</b><i></i></span>
+              </a>
+            </div>
+            <div class="project-card-footer">
+              <div class="tag-row"><span>Public information</span><span>Government website</span><span>Responsive web</span></div>
+              <div class="project-actions">
+                <button class="case-study-trigger" type="button" data-project="sb-jolo">Case study <span aria-hidden="true">→</span></button>
+                <a class="live-project-link" href="https://sangguniangbayanngjolo.page.gd/" target="_blank" rel="noopener noreferrer" aria-label="View Sangguniang Bayan ng Jolo live website">Live site <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card live-project-card project-visual-card club-project-card" data-project="club-compliance">
+            <div class="work-number">05 / Student affairs</div>
+            <div class="work-card-body project-card-layout">
+              <div class="project-card-copy">
+                <div class="work-icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48"><path d="M12 5h19l7 7v31H12V5Z"/><path d="M30 5v8h8M18 22h14M18 28h14M18 34h8"/><path d="m29 36 3 3 7-8"/></svg>
+                </div>
+                <div>
+                  <h3>Club Compliance Portal</h3>
+                  <p>An MSU-Sulu workflow for submitting, reviewing, and approving student organization constitution and bylaws documents.</p>
+                </div>
+              </div>
+
+              <a class="project-browser club-preview" href="https://club-constitution-bylaws-production.up.railway.app/" target="_blank" rel="noopener noreferrer" aria-label="Open the MSU-Sulu Club Compliance Portal">
+                <span class="mini-browser-bar"><i></i><i></i><i></i><b>compliance portal</b></span>
+                <span class="club-preview-brand"><i>MSU</i><b>Compliance Portal<small>Office of Student Affairs</small></b></span>
+                <span class="club-preview-title"><small>Club documents</small><b>Submit. Review. Approve.</b></span>
+                <span class="club-preview-flow"><i><b>1</b>Submit</i><i><b>2</b>Review</i><i><b>3</b>Approve</i></span>
+              </a>
+            </div>
+            <div class="project-card-footer">
+              <div class="tag-row"><span>Compliance workflow</span><span>Document review</span><span>Approvals</span></div>
+              <div class="project-actions">
+                <button class="case-study-trigger" type="button" data-project="club-compliance">Case study <span aria-hidden="true">→</span></button>
+                <a class="live-project-link" href="https://club-constitution-bylaws-production.up.railway.app/" target="_blank" rel="noopener noreferrer" aria-label="View Club Compliance Portal live website">Live site <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card live-project-card project-visual-card visaway-project-card" data-project="visaway">
+            <div class="work-number">06 / Creator platform</div>
+            <div class="work-card-body project-card-layout">
+              <div class="project-card-copy">
+                <div class="work-icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48"><path d="M4 24s7-12 20-12 20 12 20 12-7 12-20 12S4 24 4 24Z"/><circle cx="24" cy="24" r="6"/><path d="M37 8v7M33.5 11.5h7"/></svg>
+                </div>
+                <div>
+                  <h3>Visiway</h3>
+                  <p>A public platform where creators can showcase projects, research, creativity, achievements, and their professional journey.</p>
+                </div>
+              </div>
+
+              <a class="project-browser visaway-preview" href="https://visaway-production.up.railway.app/" target="_blank" rel="noopener noreferrer" aria-label="Open the Visiway creator platform">
+                <span class="mini-browser-bar"><i></i><i></i><i></i><b>creator platform</b></span>
+                <span class="visaway-preview-brand"><i>v</i><b>visiway</b></span>
+                <span class="visaway-preview-title"><small>The home for meaningful work</small><b>Make your work <em>visible.</em></b></span>
+                <span class="visaway-preview-tags"><i>Projects</i><i>Research</i><i>Creativity</i></span>
+              </a>
+            </div>
+            <div class="project-card-footer">
+              <div class="tag-row"><span>Creator profiles</span><span>Project showcase</span><span>Discovery</span></div>
+              <div class="project-actions">
+                <button class="case-study-trigger" type="button" data-project="visaway">Case study <span aria-hidden="true">→</span></button>
+                <a class="live-project-link" href="https://visaway-production.up.railway.app/" target="_blank" rel="noopener noreferrer" aria-label="View Visiway live website">Live site <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </section>
+
+      <section class="expertise section-block reveal" id="expertise" aria-labelledby="expertise-title">
+        <div class="section-shell expertise-layout">
+          <div class="expertise-heading">
+            <p class="eyebrow"><span></span> 02 / Technical range</p>
+            <h2 id="expertise-title">Broad enough to see the system. Focused enough to ship it.</h2>
+            <p>I work across the layers that turn an idea into a usable, maintainable product.</p>
           </div>
-        </section>
 
-        <section class="projects reveal" id="projects" tabindex="0">
-          <div class="projects-stage">
-            <div class="projects-lock-badge" aria-label="Projects are private">
-              <span aria-hidden="true">🔒</span>
-              <span>Private Projects</span>
+          <div class="capability-list">
+            <article>
+              <span class="capability-index">01</span>
+              <div><h3>Frontend &amp; experience</h3><p>Responsive layouts, accessible interfaces, and clear interactions across screen sizes.</p></div>
+              <div class="compact-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </article>
+            <article>
+              <span class="capability-index">02</span>
+              <div><h3>Backend &amp; data</h3><p>Application logic, APIs, cloud services, and relational or real-time data.</p></div>
+              <div class="compact-tags"><span>PHP</span><span>Laravel</span><span>Django</span><span>PostgreSQL</span></div>
+            </article>
+            <article>
+              <span class="capability-index">03</span>
+              <div><h3>Mobile &amp; cloud</h3><p>Cross-platform app development with integrated authentication, data, and serverless workflows.</p></div>
+              <div class="compact-tags"><span>Flutter</span><span>Dart</span><span>Firebase</span><span>Supabase</span></div>
+            </article>
+            <article>
+              <span class="capability-index">04</span>
+              <div><h3>Devices &amp; prototyping</h3><p>Hardware-software integration for practical connected system prototypes.</p></div>
+              <div class="compact-tags"><span>Arduino</span><span>ESP32</span><span>Raspberry Pi</span></div>
+            </article>
+            <article class="capability-ai">
+              <span class="capability-index">05</span>
+              <div><h3>AI automation <small>Workflow intelligence</small></h3><p>Practical AI-assisted workflows that connect tools, reduce repetitive steps, and keep human review where it matters.</p></div>
+              <div class="compact-tags"><span>AI workflows</span><span>Prompt engineering</span><span>API integration</span><span>Process automation</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell section-block reveal" id="approach" aria-labelledby="approach-title">
+        <div class="section-intro approach-intro">
+          <div>
+            <p class="eyebrow"><span></span> 03 / How I work</p>
+            <h2 id="approach-title">Thoughtful execution at every layer.</h2>
+          </div>
+          <p>Good engineering is more than making a feature work. It is understanding the problem, choosing sensible tradeoffs, and leaving the system better than you found it.</p>
+        </div>
+        <div class="approach-grid">
+          <article><span>01</span><h3>Clarify the problem</h3><p>Align on the user, constraints, and definition of done before the build gets expensive.</p></article>
+          <article><span>02</span><h3>Design the system</h3><p>Break the work into clear boundaries, data flows, and maintainable components.</p></article>
+          <article><span>03</span><h3>Build &amp; verify</h3><p>Ship in focused increments, test the important paths, and refine from real feedback.</p></article>
+          <article><span>04</span><h3>Document &amp; improve</h3><p>Make decisions visible so the next change is faster, safer, and easier to own.</p></article>
+        </div>
+      </section>
+
+      <section class="section-shell contact reveal" id="contact" aria-labelledby="contact-title">
+        <div class="contact-copy">
+          <p class="eyebrow"><span></span> 04 / Start a conversation</p>
+          <h2 id="contact-title">Have a role where I can make an impact?</h2>
+          <p>Let's talk about the product, the engineering challenges, and how I can contribute.</p>
+          <a class="email-link" href="mailto:abdulkadiljhonardz@gmail.com">abdulkadiljhonardz@gmail.com <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="contact-links" aria-label="Social links">
+          <a href="https://github.com/abdulkadiljhonardz-byte" target="_blank" rel="noopener noreferrer"><span>GitHub</span><b aria-hidden="true">↗</b></a>
+          <a href="https://www.linkedin.com/in/jhonardz-abdulkadil" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><b aria-hidden="true">↗</b></a>
+          <a href="https://www.facebook.com/johnardz.abdulkadil/" target="_blank" rel="noopener noreferrer"><span>Facebook</span><b aria-hidden="true">↗</b></a>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="case-study-dialog" id="case-study-dialog" aria-labelledby="case-study-title">
+      <div class="case-study-shell">
+        <button class="case-study-close" type="button" aria-label="Close case study"><span aria-hidden="true">×</span></button>
+        <div class="case-study-topline">
+          <p><span id="case-study-index">01 / 06</span><b id="case-study-category">Education</b></p>
+          <span class="case-study-status"><i aria-hidden="true"></i> Live product</span>
+        </div>
+
+        <div class="case-study-layout">
+          <div class="case-study-content">
+            <p class="eyebrow"><span></span> Project case study</p>
+            <h2 id="case-study-title">Project title</h2>
+            <p class="case-study-summary" id="case-study-summary"></p>
+
+            <div class="case-study-facts">
+              <section>
+                <h3>Focus</h3>
+                <p id="case-study-focus"></p>
+              </section>
+              <section>
+                <h3>Built for</h3>
+                <p id="case-study-audience"></p>
+              </section>
             </div>
 
-            <div class="section-heading section-heading-centered">
-              <p class="section-kicker">Projects</p>
-              <h3>Private work available on request.</h3>
-            </div>
+            <section class="case-study-features">
+              <h3>Key experience</h3>
+              <ul id="case-study-features"></ul>
+            </section>
 
-            <div
-              class="project-notice"
-              id="project-notice"
-              aria-live="polite"
-              aria-hidden="true"
-            >
-              <span class="project-notice-lock" aria-hidden="true">🔒</span>
-              <strong id="project-notice-title">Private Projects</strong>
+            <div class="case-study-tags" id="case-study-tags" aria-label="Project technologies"></div>
+            <div class="case-study-actions">
+              <a class="button button-primary" id="case-study-link" href="#" target="_blank" rel="noopener noreferrer">Visit live project <span aria-hidden="true">↗</span></a>
+              <button class="case-study-next" type="button">Next project <span aria-hidden="true">→</span></button>
             </div>
           </div>
-        </section>
 
-        <section class="contact-panel reveal" id="contact">
-          <div class="contact-header">
-            <p class="section-kicker">Contact</p>
-            <h3>Let's build something.</h3>
+          <div class="case-study-stage">
+            <span class="case-study-stage-label">Interactive preview</span>
+            <div class="case-study-preview" id="case-study-preview"></div>
+            <p>Open the live product to explore the complete experience.</p>
           </div>
+        </div>
+      </div>
+    </dialog>
 
-          <div class="contact-actions">
-            <a
-              class="button button-solid contact-icon-button"
-              href="mailto:abdulkadiljhonardz@gmail.com"
-              aria-label="Email"
-            >
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  d="M4 6h16c1.1 0 2 .9 2 2v8c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V8c0-1.1.9-2 2-2Zm0 2v.4l8 5.2 8-5.2V8H4Zm16 8V11l-7.5 4.9a1 1 0 0 1-1 0L4 11v5h16Z"
-                />
-              </svg>
-            </a>
-            <a
-              class="button button-ghost contact-icon-button"
-              href="https://www.facebook.com/johnardz.abdulkadil/"
-              aria-label="Facebook"
-            >
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  d="M14 8h2V5h-2c-2.2 0-4 1.8-4 4v2H8v3h2v5h3v-5h2.5l.5-3H13V9c0-.6.4-1 1-1Z"
-                />
-              </svg>
-            </a>
-            <a
-              class="button button-ghost contact-icon-button"
-              href="https://github.com/abdulkadiljhonardz-byte"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="GitHub"
-            >
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M12 2C6.48 2 2 6.58 2 12.23c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.2-3.37-1.2-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1.01.07 1.54 1.06 1.54 1.06.9 1.57 2.36 1.12 2.94.86.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.15-4.56-5.1 0-1.13.39-2.05 1.04-2.78-.1-.26-.45-1.31.1-2.73 0 0 .85-.28 2.75 1.06A9.3 9.3 0 0 1 12 6.5c.85 0 1.71.12 2.51.35 1.9-1.34 2.74-1.06 2.74-1.06.55 1.42.2 2.47.1 2.73.65.73 1.04 1.65 1.04 2.78 0 3.96-2.35 4.83-4.58 5.09.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.25 10.25 0 0 0 22 12.23C22 6.58 17.52 2 12 2Z" />
-              </svg>
-            </a>
-            <a
-              class="button button-ghost contact-icon-button"
-              href="https://www.linkedin.com/in/jhonardz-abdulkadil"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="LinkedIn"
-            >
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M6.5 8.5A1.75 1.75 0 1 0 6.5 5a1.75 1.75 0 0 0 0 3.5ZM5 9.8h3V19H5V9.8Zm4.9 0h2.87v1.25h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.6V19h-3v-4.35c0-1.04-.02-2.37-1.45-2.37-1.45 0-1.67 1.13-1.67 2.3V19h-3V9.8Z" />
-              </svg>
-            </a>
-          </div>
-        </section>
-      </main>
-    </div>
-
-    <footer class="footer">
-      <p>Jhonardz Mo-o Abdulkadil</p>
-      <p><span id="year"></span> Portfolio</p>
+    <footer class="site-footer section-shell">
+      <p>© <span id="year"></span> Jhonardz Mo-o Abdulkadil</p>
+      <p>Built with care. Designed to keep evolving.</p>
+      <a href="#top">Back to top ↑</a>
     </footer>
 
     <script src="script.js"></script>
